@@ -34,3 +34,19 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
   });
+
+  const navMenu = document.querySelector(".nav_menu");
+  const hamburgerMenu = document.querySelector("#open-menu-btn");
+  const closeMenu = document.querySelector("#close-menu-btn");
+
+  hamburgerMenu.addEventListener("click", () => {
+      navMenu.style.display = "flex";
+      closeMenu.style.display = "inline-block";
+      hamburgerMenu.style.display = "none";
+  });
+
+  closeMenu.addEventListener("click", () => {
+      navMenu.style.display = "none";
+      closeMenu.style.display = "none";
+      hamburgerMenu.style.display = "inline-block";
+  });

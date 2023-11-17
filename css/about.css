@@ -1,0 +1,127 @@
+.about_achivements {
+    margin-top: 3rem;
+}
+
+.about_achivements_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about_achivements_right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achivements_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achivement_card {
+    background: var(--color-bg1);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.achivement_card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+
+.achivements_icon {
+    background: var(--color-danger);
+    padding: .6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achivement_card:nth-child(2) .achivements_icon {
+    background: var(--color-success);
+}
+
+
+.achivement_card:nth-child(3) .achivements_icon {
+    background: var( --color-primary);
+}
+
+.achivement_card p{
+  margin-top: .8rem;
+}
+
+/* team */
+
+.team {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+
+.team_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team_member {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.team_member:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team_member:hover .team_member_sm {
+    right: 0;
+}
+
+.team_member img {
+    filter: saturate(0);
+    border-radius: 1rem;
+}
+
+.team_member img:hover {
+    filter: saturate(1);
+}
+
+.team_member_info * {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.team_member_info p {
+    color: var(--color-light);
+}
+
+.team_member_sm {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+
+.team_member_sm a {
+    padding: 1rem;
+}
+
+
+
+
+
