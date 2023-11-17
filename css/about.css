@@ -122,6 +122,54 @@
 }
 
 
+/* responsive design tablet */
 
+@media screen and (max-width: 1024px) {
+    .about_achivements {
+        margin-top: 2rem;
+    }
+
+    .about_achivements_container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about_achivements_left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .team_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team_member {
+        padding: 1rem;
+    }
+
+}
+
+/* responsive design phone */
+
+@media screen and (max-width: 600px) {
+    .achivements_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: .7rem;
+    }
+
+    .team_container {
+        grid-template-columns: 1fr 1fr;
+        gap: .7rem;
+    }
+
+    .team_member {
+        padding: 0;
+    }
+
+    .team_member p {
+        margin-bottom: 1.5rem;
+    }
+
+}
 
 

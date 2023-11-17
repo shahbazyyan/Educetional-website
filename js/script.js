@@ -21,19 +21,7 @@ faqs.forEach(item => {
     });
 });
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-        600: {
-            slidesPerView: 2,
-        }
-    }
-  });
+
 
   const navMenu = document.querySelector(".nav_menu");
   const hamburgerMenu = document.querySelector("#open-menu-btn");
